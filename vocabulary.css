@@ -1,0 +1,168 @@
+.divTable {
+  display: table;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.divTableRow {
+  display: table-row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group;
+}
+
+.divTableCell,
+.divTableHead {
+  border: 1px solid #999999;
+  display: table-cell;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+
+
+
+}
+
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group;
+  font-weight: bold;
+}
+
+.divTableFoot {
+  background-color: #EEE;
+  display: table-footer-group;
+  font-weight: bold;
+}
+
+.divTableBody {
+  display: table-row-group;
+  display: flex;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.vocabulary {
+  /*font-size: 5vmin;*/
+  font-size: calc(1vw + 1vh + .5vmin);
+}
+
+
+.more_info .furigana {
+
+  position: absolute;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  background: silver;
+  padding: 4px;
+  white-space: normal;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  word-break: break-word;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 90000;
+
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 10%; /* Need a specific value to work */
+}
+
+
+/* KEYWORD */
+kw:before {
+  content: attr(t);
+  text-align: start;
+  line-height: 1.5;
+}
+
+kw {
+
+  text-indent: 0px;
+  line-height: normal;
+  text-align: center;
+}
+
+/* end KEYWORD */
+
+
+.translation {
+  position: absolute;
+  background: gold;
+  border: 1px solid #999999;
+  cursor: pointer;
+
+}
+
+.showT{
+  /*border: 1px solid #999999;*/
+  background: gold;
+  border: 1px solid black;
+  border-radius: 6px;
+  text-align: center;
+}
+
+
+.divTableCell {
+  background-color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.more_info .story {
+
+    position: absolute;
+    width: 300px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+       display: flex;
+       flex-wrap: wrap;
+       background: gold;
+       padding: 4px;
+       white-space: normal;
+       margin:0 auto;
+       border:1px solid black;
+       border-radius: 6px;
+       cursor: pointer;
+       word-break: break-word;
+       justify-content: space-between;
+       align-items: center;
+       z-index: 90000;
+ 
+ 
+   }
+ */
