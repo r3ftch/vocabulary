@@ -17,13 +17,16 @@
 
 .divTableCell,
 .divTableHead {
-  border: 1px solid #999999;
+  border: 2px solid silver;
   display: table-cell;
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
 
+
+
+  margin: 2px;
 
 
 
@@ -48,12 +51,13 @@
 
 body {
   background-color: whitesmoke;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 .vocabulary {
   /*font-size: 5vmin;*/
   font-size: calc(1vw + 1vh + .5vmin);
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  margin-top: 10px;
 }
 
 
@@ -69,20 +73,21 @@ body {
   display: flex;
   flex-wrap: wrap;
   background: silver;
-  padding: 4px;
+  padding: 1px;
   white-space: normal;
-  margin: 0 auto;
   border: 1px solid black;
   border-radius: 6px;
   cursor: pointer;
-  word-break: break-word;
   justify-content: space-between;
   align-items: center;
   z-index: 90000;
 
   margin-left: auto; 
   margin-right: auto; 
-  width: 10%; /* Need a specific value to work */
+  border-radius: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+
 }
 
 
@@ -106,17 +111,21 @@ kw {
 .translation {
   position: absolute;
   background: gold;
-  border: 1px solid #999999;
+  border: 1px solid silver;
   cursor: pointer;
-
 }
 
 .showT{
   /*border: 1px solid #999999;*/
-  background: gold;
-  border: 1px solid black;
-  border-radius: 6px;
+  background: lightgrey;
+  border: 1px solid silver;
   text-align: center;
+  color: black;
+  
+  border-radius: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: -6px;
 }
 
 
@@ -125,14 +134,48 @@ kw {
 }
 
 
+b{
+  color: black;
+  font-size: 10px;
+  font-size: calc(.1vw + .1vh + .5vmin);
+}
 
 
+/*https://melvingeorge.me/blog/add-text-in-center-on-divider-hr-html-css*/
 
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 5px;
+}
 
+.divider::after,
+.divider::before,
+.dividerTop::after,
+.dividerTop::before {
+  content: "";
+  border: 1px solid black;
+  flex: 1;
+}
 
+.divider:not(:empty)::before {
+  margin-right: .25em;
+}
 
+.divider:not(:empty)::after {
+  margin-left: .25em;
+}
 
-
+.dividerTop {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 5px;
+}
 
 
 
