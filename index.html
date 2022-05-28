@@ -1130,14 +1130,26 @@ $(document).ready(function(){
     var value = $(this).val().toLowerCase();
     var $furigana = $(this).find(".furigana");
     $(".divTable *").filter(function() {
-      $(this).not('.furigana').toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      $(this).not('.furigana, .more_info, .vocabulary').toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
     });
 
   });
 
 });
 
+$(document).ready(function(){
+  $("button").click(function(){
 
+    var cells = $(".showT").empty().append($(".showT").attr("translation"));
+
+cells.each(function (i) {
+    cells.eq(i).html($(this).attr("translation"));
+});
+
+    
+  });
+});
 
 
 
@@ -1149,16 +1161,6 @@ $(document).ready(function(){
 
 
 </html>
-
-
-
-
-
-
-
-
-
-
 
 
 
